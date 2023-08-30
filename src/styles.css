@@ -1,0 +1,83 @@
+body {
+  font-family: sans-serif;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  background: linear-gradient(
+    70deg,
+    rgba(94, 100, 114, 0.3),
+    rgba(174, 217, 224, 0.3),
+    rgba(245, 245, 245, 0.4),
+    rgba(189, 198, 103, 0.4)
+  );
+  border: solid black 2px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.submitCity {
+  font-family: "Poppins", sans-serif;
+  border: solid 1px black;
+  border-radius: 10px;
+}
+.changeCity {
+  font-family: "Poppins", sans-serif;
+  font-weight: light;
+  font-style: italic;
+}
+
+img {
+  border: solid 1px black;
+  border-radius: 50%;
+  margin: 15px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 3px 3px 6px gray;
+}
+
+i {
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+.mainHeading {
+  font-size: 75px;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.tempConditions {
+  font-size: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.btn {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  border-radius: 10px;
+  border: solid 1px black;
+  padding: 2px 3px;
+}
+.dateTime {
+  font-size: 45px;
+  text-align: right;
+}
+
+.humidityAQI {
+  font-size: 25px;
+  color: gray;
+  text-align: right;
+}
+
+input {
+  padding: 3px 6px 3px 6px;
+  border-radius: 15px;
+  border-color: gray;
+}
+
+.col .d-flex {
+  justify-content: space-evenly;
+}

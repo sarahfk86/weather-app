@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.js"></script>
+<link href="src/styles.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/c0b37fd600.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class = "col-auto">
+		<form id="city-search">
+			<input class="changeCity" id="change-city" type="text" placeholder="Change city..." /></input>
+		<button class="submitCity" id="city-submit">submit</button></form>
+		<button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
+	</div>
+	<div class="row">
+		<div class="col-1"></div>
+		 <div class="col-4">
+			<img src="img/cloudy2.jpg" /></div>
+		<div class="col-6">
+				<h2 class="mainHeading" id="city-heading">City</h2>
+				<h4 class="dateTime" id="date-time">date | time</h4>
+				<h3 class="tempConditions" id="temp-conditions"><span id="conditions">conditions</span> | <span id="temperature"> temperature</span></h3>
+				<h5 class="humidityAQI">humidity | aqi </h5>
+		</div>
+		<div class="col-1"></div>
+	<div class="row">
+			<div class="col d-flex justify-content-center"><button type="button" class="btn btn-light"><i class="fa-solid fa-sun"></i></button></div>
+			<div class="col d-flex justify-content-center"><button type="button" class="btn btn-light"><i class="fa-solid fa-cloud-sun"></i></button></div>
+			<div class="col d-flex justify-content-center"><button type="button" class="btn btn-light"><i class="fa-solid fa-cloud"></i></button></div>
+			<div class="col d-flex justify-content-center"><button type="button" class="btn btn-light"> <i class="fa-solid fa-cloud-sun"></i></button></div>
+			<div class="col d-flex justify-content-center"><button type="button" class="btn btn-light"><i class="fa-solid fa-cloud-sun"></i></button></div>
+	</div>
+<script src="src/index.js"></script>
+</div></body>
+</html>
