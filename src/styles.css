@@ -22,6 +22,8 @@ body {
   border: none;
   color: lightblue;
   font-family: "Poppins", sans-serif;
+}
+.link-secondary {
   text-decoration: none;
 }
 .submitCity {
