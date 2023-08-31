@@ -17,6 +17,12 @@ body {
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
 }
+.container .text-center {
+  background: none;
+  border: none;
+  color: lightblue;
+  font-family: "Poppins", sans-serif;
+}
 .submitCity {
   font-family: "Poppins", sans-serif;
   border: solid 1px black;
