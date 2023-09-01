@@ -90,6 +90,7 @@ input {
 .col .d-flex {
   justify-content: space-evenly;
 }
-.text-start .fs-8 {
-  padding: 6px 3px 2px 3px;
+.row .d-flex {
+  justify-content: center;
+  align-items: end;
 }
