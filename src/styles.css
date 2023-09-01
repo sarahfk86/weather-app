@@ -91,5 +91,5 @@ input {
   justify-content: space-evenly;
 }
 .text-start .fs-8 {
-  margin-top: 5px;
+  padding: 6px 3px 2px 3px;
 }
