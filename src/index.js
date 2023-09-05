@@ -115,4 +115,4 @@ function getLocation(event) {
 let findButton = document.querySelector("#locate-me");
 findButton.addEventListener("click", getLocation);
 
-citySearch("cleveland");
+searchCity("cleveland");

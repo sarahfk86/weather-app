@@ -95,3 +95,11 @@ input {
 #temp-element {
   font-size: 75px;
 }
+.units .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
