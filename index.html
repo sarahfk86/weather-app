@@ -16,13 +16,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<div class="container" id="app-container">
 	<div class="row">
-		<div class = "col-auto">
+		<div class = "col-6">
 		<form id="city-search">
-			<input class="changeCity" id="change-city" type="text" placeholder="Change city..." /></input>
-		<button class="submitCity" id="city-submit">submit</button></form>
-		<button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
+			<input class="changeCity" id="change-city" type="text" placeholder="Change city..." autocomplete="off"></input></div>
+		<div class="col-3"><button class="submitCity" id="city-submit">submit</button></form></div>
+		<div class="col-3"><button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
 	</div>
 	<div class="row">
 		<div class="col-1"></div>
@@ -30,9 +30,9 @@
 			<img src="img/cloudy2.jpg" /></div>
 		<div class="col-6">
 				<h2 class="mainHeading" id="city-heading">City</h2>
-				<div class = "text-wrap"><h4 class="dateTime" id="date-time">date | time</h4></div>
-				<h3 class="tempConditions" id="temp-conditions"><span id="conditions">conditions</span> | <span id="temperature"> temperature</span></h3>
-				<h5 class="humidityAQI">humidity | aqi </h5>
+				<ul><li class="dateTime" id="date-time">date | time</li>
+				<li class="tempConditions" id="temp-conditions"><span id="conditions">conditions</span> | <span id="temperature"> temperature</span><span class="units"><a href="#" id="celsius-link" class="active">°C</a><a href="#" id="fahrenheit-link">°F</a></span></li>
+				<li class="otherWeather"><span class="humidity">humidity</span> | <span class="wind">wind</span></li>
 		</div>
 		<div class="col-1">
 		</div>
@@ -47,7 +47,6 @@
 		<div class="code-link">
 				<small><a href="https://github.com/sarahfk86/weather-app" class="link-secondary" target="_blank">open source code by sfk</a></small>
 			</div>
-	</div>
 	<script src="src/index.js"></script>
 </body>
 </html>

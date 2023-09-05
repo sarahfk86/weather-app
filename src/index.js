@@ -44,10 +44,36 @@ let cityForm = document.querySelector("#city-search");
 let cityInput = document.querySelector("#change-city");
 function getWeather(response) {
   let temperature = Math.round(response.data.main.temp);
-  document.querySelector("#temperature").innerHTML = `${temperature}°C`;
+  document.querySelector("#temperature").innerHTML = `${temperature}`;
   let responseCity = response.data.name;
   document.querySelector("#city-heading").innerHTML = `${responseCity}`;
+  let conditions = response.data.weather[0].description;
+  document.querySelector("#conditions").innerHTML = `${conditions}`;
+  let humidity = response.data.main.humidity;
+  document.querySelector("#humidity").innerHTML = `${humidity}`;
+  let wind = response.data.wind.speed;
+  document.querySelector("#wind").innerHTML = `${wind}`;
 }
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 function searchCity(city) {
   let apiKey = "75bb0c1161e91d5869fbb965d8219152";
   let q = `${cityInput.value}`;
