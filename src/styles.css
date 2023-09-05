@@ -98,6 +98,7 @@ input {
 .active {
   color: rgb(33, 33, 33);
   cursor: default;
+  text-decoration: none;
 }
 
 .active:hover {
