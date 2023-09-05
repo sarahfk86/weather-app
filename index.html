@@ -18,20 +18,20 @@
 <body>
 <div class="container" id="app-container">
 	<div class="row">
-		<div class = "col-6">
+		<div class = "col-auto">
 		<form id="city-search">
 			<input class="changeCity" id="change-city" type="text" placeholder="Change city..." autocomplete="off"></input></div>
-		<div class="col-3"><button class="submitCity" id="city-submit">submit</button></form></div>
-		<div class="col-3"><button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
+		<div class="col-auto"><button class="submitCity" id="city-submit">submit</button></form></div>
+		<div class="col-auto"><button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
 	</div>
 	<div class="row">
 		<div class="col-1"></div>
 		 <div class="col-4">
-			<img src="img/cloudy2.jpg" /></div>
+			<img id="icon-element"src="#"alt="#" /></div>
 		<div class="col-6">
 				<h2 class="mainHeading" id="city-heading">City</h2>
 				<ul><li class="dateTime" id="date-time">date | time</li>
-				<li class="tempConditions" id="temp-conditions"><span id="conditions">conditions</span> | <span id="temperature"> temperature</span><span class="units"><a href="#" id="celsius-link" class="active">°C</a><a href="#" id="fahrenheit-link">°F</a></span></li>
+				<li class="tempConditions" id="temp-conditions"><span id="conditions">conditions </span> | <span id="temperature"> temperature </span><span class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span></li>
 				<li class="otherWeather"><span class="humidity">humidity</span> | <span class="wind">wind</span></li>
 		</div>
 		<div class="col-1">

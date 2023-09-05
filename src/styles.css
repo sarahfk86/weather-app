@@ -69,7 +69,12 @@ i {
   text-align: right;
 }
 
-li ::first-letter {
+li {
+  list-style: none;
+  margin: none;
+  padding: none;
+}
+#conditions ::first-letter {
   text-transform: capitalize;
 }
 .otherWeather {
