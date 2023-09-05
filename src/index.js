@@ -53,6 +53,7 @@ function getWeather(response) {
   document.querySelector("#humidity").innerHTML = `${humidity}`;
   let wind = response.data.wind.speed;
   document.querySelector("#wind").innerHTML = `${wind}`;
+  let iconElement = document.querySelector("#icon-element");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -78,8 +79,8 @@ function displayFahrenheitTemperature(event) {
   let temperatureElement = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  let fahrenheiTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 function displayCelsiusTemperature(event) {
