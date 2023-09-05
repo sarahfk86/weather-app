@@ -50,9 +50,10 @@ function getWeather(response) {
   let conditions = response.data.weather[0].description;
   document.querySelector("#conditions").innerHTML = `${conditions}`;
   let humidity = response.data.main.humidity;
-  document.querySelector("#humidity").innerHTML = `${humidity}`;
   let wind = response.data.wind.speed;
-  document.querySelector("#wind").innerHTML = `${wind}`;
+  document.querySelector(
+    "#other-weather"
+  ).innerHTML = `${humidity}% | ${wind}km/hr`;
   let iconElement = document.querySelector("#icon-element");
   iconElement.setAttribute(
     "src",
