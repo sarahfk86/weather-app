@@ -44,7 +44,7 @@ let cityForm = document.querySelector("#city-search");
 let cityInput = document.querySelector("#change-city");
 function getWeather(response) {
   let celsiusTemperature = Math.round(response.data.main.temp);
-  document.querySelector("#temperature").innerHTML = `${celsiusTemperature}`;
+  document.querySelector("#temp-element").innerHTML = `${celsiusTemperature}`;
   let responseCity = response.data.name;
   document.querySelector("#city-heading").innerHTML = `${responseCity}`;
   let conditions = response.data.weather[0].description;
@@ -77,7 +77,7 @@ cityForm.addEventListener("submit", submitSearch);
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#temp-element");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
@@ -88,7 +88,7 @@ function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#temp-element");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 

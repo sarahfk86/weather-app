@@ -38,6 +38,7 @@ img {
   width: 250px;
   height: 250px;
   box-shadow: 3px 3px 6px gray;
+  background-color: white;
 }
 
 i {
