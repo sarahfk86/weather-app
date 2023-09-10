@@ -11,16 +11,11 @@
   border-radius: 10px;
   font-family: "Poppins", sans-serif;
 }
-.container .text-center {
-  background: none;
-  border: none;
-  color: lightblue;
-  font-family: "Poppins", sans-serif;
-}
+
 .link-secondary {
   text-decoration: none;
 }
-.submitCity {
+button {
   font-family: "Poppins", sans-serif;
   border: solid 1px black;
   border-radius: 10px;
@@ -31,13 +26,14 @@
   font-style: italic;
 }
 
-img {
-  border: solid 1px black;
+#icon-element {
+  border: solid 1px gray;
   border-radius: 50%;
   margin: 15px;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   box-shadow: 3px 3px 6px gray;
+  background-color: white;
 }
 
 i {
@@ -47,26 +43,25 @@ i {
 }
 
 .mainHeading {
-  font-size: 75px;
+  font-size: 35px;
   text-align: right;
   font-weight: bolder;
-}
-
-.conditions {
-  font-size: 30px;
+  margin-top: 3px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: flex-end;
 }
-.btn {
-  font-family: "Poppins", sans-serif;
-  color: black;
-  border-radius: 10px;
-  border: solid 1px black;
-  padding: 2px 3px;
+
+.conditions {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
 }
 .dateTime {
-  font-size: 45px;
+  font-size: 1.15rem;
   text-align: right;
+  color: gray;
 }
 
 li {
@@ -74,33 +69,24 @@ li {
   margin: none;
   padding: none;
 }
-#conditions ::first-letter {
-  text-transform: capitalize;
-}
+
 .otherWeather {
-  font-size: 25px;
-  color: gray;
+  font-size: 1.15rem;
   text-align: right;
 }
 
 input {
   padding: 3px 6px 3px 6px;
   border-radius: 15px;
-  border-color: gray;
+  border: solid 1px black;
 }
 
-.col .d-flex {
-  justify-content: space-evenly;
-}
 #temp-element {
-  font-size: 75px;
-}
-.active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
+  font-size: 40px;
 }
 
-.active:hover {
-  text-decoration: none;
+#forecast-icon {
+  background-color: white;
+  border: solid 1px gray;
+  box-shadow: 1px 1px 4px gray;
 }

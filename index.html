@@ -20,26 +20,29 @@
 	<div class="row">
 		<div class = "col-auto">
 		<form id="city-search">
-			<input class="changeCity" id="change-city" type="text" placeholder="Change city..." autocomplete="off"></input></div>
+			<input class="changeCity" id="input
+			group-sizing-sm change-city" type="text" placeholder="Change city..." autocomplete="off"></input></div>
 		<div class="col-auto"><button class="submitCity" id="city-submit">submit</button></form></div>
-		<div class="col-auto"><button type="button" class="btn btn-secondary" id="locate-me">current location</button></div>
+		<div class="col-auto"><small>or</small></div>
+		<div class="col-auto"><button id="locate-me">current location</button></div>
 	</div>
 	<div class="row">
-		 <div class="col-6">
+		 <div class="col-5">
 			<img id="icon-element"/>
-		<strong id="temp-element"></strong><small class="units"><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></small></div>
-		<div class="col-6">
-				<h2 class="mainHeading" id="city-heading"></h2>
-				<ul><li class="dateTime" id="date-time"></li>
-				<li class="conditions" id="conditions">conditions</li>
-				<li class="otherWeather" id="other-weather">humidity & wind</li></ul>
+		<strong id="temp-element"></strong><small class="justify-top" id="units">°C</small></div>
+		<div class="col-7">
+				<h2 class="mainHeading" id="city-heading">City</h2>
+				<ul><li class="conditions" id="conditions">conditions</li>
+				<li class="otherWeather" id="other-weather">humidity & wind</li>
+				<li class="dateTime" id="date-time">last updated: <span id="date"></span></li>
+				</ul>
 		</div>
 		</div>
 	<div class="weather-forecast" id="forecast">
 			</div>
 	</div>
-		<div class="code-link">
-				<small><a href="https://github.com/sarahfk86/weather-app" class="link-secondary" target="_blank">open source code by sfk</a></small>
+		<div class="text-center" id="codelink">
+			<a href="https://github.com/sarahfk86/weather-app" class="link-secondary" target="_blank">open source code by sfk</a></small>
 			</div>
 	<script src="src/index.js"></script>
 </body>
